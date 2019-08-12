@@ -1,5 +1,6 @@
 {
   "name": "my_yahoo-shopping-ranking",
+  "homepage": "http://sasachichito.github.io/yahoo-shopping-ranking",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

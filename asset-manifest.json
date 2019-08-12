@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yahoo-shopping-ranking/static/css/main.2cce8147.chunk.css",
+    "main.js": "/yahoo-shopping-ranking/static/js/main.e6c5c456.chunk.js",
+    "main.js.map": "/yahoo-shopping-ranking/static/js/main.e6c5c456.chunk.js.map",
+    "runtime~main.js": "/yahoo-shopping-ranking/static/js/runtime~main.888bc89d.js",
+    "runtime~main.js.map": "/yahoo-shopping-ranking/static/js/runtime~main.888bc89d.js.map",
+    "static/js/2.00f77669.chunk.js": "/yahoo-shopping-ranking/static/js/2.00f77669.chunk.js",
+    "static/js/2.00f77669.chunk.js.map": "/yahoo-shopping-ranking/static/js/2.00f77669.chunk.js.map",
+    "index.html": "/yahoo-shopping-ranking/index.html",
+    "precache-manifest.1e8621a7769e6a1377e844eb7dcd763b.js": "/yahoo-shopping-ranking/precache-manifest.1e8621a7769e6a1377e844eb7dcd763b.js",
+    "service-worker.js": "/yahoo-shopping-ranking/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/yahoo-shopping-ranking/static/css/main.2cce8147.chunk.css.map"
+  }
+}

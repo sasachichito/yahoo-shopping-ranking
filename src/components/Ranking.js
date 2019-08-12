@@ -38,12 +38,12 @@ export default class Ranking extends React.Component {
                         return ranking.map((item, i) => (
                             <Card
                               key={`ranking-item-${item.code}`}
-                              style={{ display: 'inline-block', maxWidth: '300px', margin: '32px'}}
+                              style={{ display: 'inline-block', maxWidth: '220px', margin: '32px'}}
                             >
                                 <CardMedia
                                   image={item.imageUrl}
                                   title={`${i + 1}位 ${item.name}`}
-                                  style={{ height: '300px'}}
+                                  style={{ height: '220px'}}
                                 />
                                 <CardContent>
                                     <Typography style={{ textOverflow: "ellipsis", whiteSpace: "nowrap", overflow: "hidden" }}>

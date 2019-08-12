@@ -26,6 +26,7 @@ function App() {
 
       <div style={{ marginTop: 64, padding: 32 }}>
         <Switch>
+          <Route exact path="/" component={Ranking} />
           <Route path="/all" component={Ranking} />
           <Route
             path="/category/1"

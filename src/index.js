@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Provider } from 'react-redux';
-import createBrowserHistory from 'history/createBrowserHistory';
+//import createHistory from 'history/createBrowserHistory';
+import createHistory from 'history/createHashHistory';
 import App from './App';
 import { ConnectedRouter } from 'connected-react-router';
 import createStore from './createStore';
 import * as serviceWorker from './serviceWorker';
 
-const history = createBrowserHistory();
+const history = createHistory();
 
 const store = createStore(history);
 

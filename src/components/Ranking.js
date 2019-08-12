@@ -1,5 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import { Typography } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 
 export default class Ranking extends React.Component {
     componentWillMount() {
@@ -29,16 +35,31 @@ export default class Ranking extends React.Component {
                     } else if (typeof ranking === 'undefined') {
                         return <p>読み込み中...</p>
                     } else {
-                        return (
-                            <ol>
-                                {ranking.map(item => (
-                                    <li key={`ranking-item-${item.code}`}>
-                                        <img alt={item.name} src={item.imageUrl} />
-                                        <a href={item.url} target="_blank">{item.name}</a>
-                                    </li>
-                                ))}
-                            </ol>
-                        );
+                        return ranking.map((item, i) => (
+                            <Card
+                              key={`ranking-item-${item.code}`}
+                              style={{ display: 'inline-block', maxWidth: '300px', margin: '32px'}}
+                            >
+                                <CardMedia
+                                  image={item.imageUrl}
+                                  title={`${i + 1}位 ${item.name}`}
+                                  style={{ height: '300px'}}
+                                />
+                                <CardContent>
+                                    <Typography style={{ textOverflow: "ellipsis", whiteSpace: "nowrap", overflow: "hidden" }}>
+                                        {`${i + 1}位　${item.name}`}
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <Button
+                                      raised
+                                      color="secondary"
+                                      fullWidth
+                                      href={item.url}
+                                    >商品ページ</Button>
+                                </CardActions>
+                            </Card>
+                        ))
                     }
                 })()}
             </div>

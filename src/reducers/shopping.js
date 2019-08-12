@@ -30,7 +30,7 @@ export default (state = initialState, action) => {
         case 'RECEIVE_CATEGORIES':
             return action.payload.error
                 ? { ...state, error: true}
-                : { ... state, 
+                : { ...state,
                     categories : getCategories(action.payload.categoriesResponse)
                 };
         default:

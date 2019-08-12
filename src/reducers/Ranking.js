@@ -30,7 +30,7 @@ export default (state = initialState, action) => {
         case 'RECEIVE_DATA':
             return action.payload.error
                 ? { ...state, error: true}
-                : { ... state, 
+                : { ...state,
                     ranking: getRanking(action.payload.response)
                 };
         default:
